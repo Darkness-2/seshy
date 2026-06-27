@@ -15,6 +15,7 @@
 		"noEmitOnError": true,
 		"removeComments": true,
 		"esModuleInterop": true,
+		"types": ["node"],
 
 		/* TYPE CHECKING RULES */
 		"strict": true,
