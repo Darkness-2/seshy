@@ -1,4 +1,8 @@
 {
   "files": [],
-  "references": [{ "path": "packages/core" }, { "path": "packages/sessions" }]
+  "references": [
+    { "path": "packages/core" },
+    { "path": "packages/sessions" },
+    { "path": "./tsconfig.root.json" }
+  ]
 }

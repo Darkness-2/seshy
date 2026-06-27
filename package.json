@@ -7,11 +7,13 @@
   ],
   "scripts": {
     "build": "tsc --build",
-    "clean": "rm -rf packages/*/dist packages/*/tsconfig.tsbuildinfo"
+    "clean": "rm -rf packages/*/dist packages/*/tsconfig.tsbuildinfo",
+    "lint": "tsc --noEmit && eslint ."
   },
-  "dependencies": {},
   "devDependencies": {
-    "typescript": "^6.0.3"
+    "eslint": "^10.6.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.0"
   },
   "description": "",
   "keywords": [],
