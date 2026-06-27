@@ -2,6 +2,9 @@
 	"name": "seshy",
 	"version": "0.0.1",
 	"private": true,
+	"engines": {
+		"node": ">=20"
+	},
 	"workspaces": [
 		"packages/*"
 	],
@@ -10,14 +13,21 @@
 		"clean": "rm -rf packages/*/dist packages/*/tsconfig.tsbuildinfo",
 		"lint": "tsc --noEmit && eslint . && prettier --check .",
 		"lint:fix": "eslint . --fix",
-		"lint:format": "prettier --write ."
+		"lint:format": "prettier --write .",
+		"test": "vitest",
+		"test:run": "vitest run",
+		"test:coverage": "vitest --coverage --ui"
 	},
 	"devDependencies": {
 		"@ianvs/prettier-plugin-sort-imports": "^4.7.1",
+		"@types/node": "^26.0.1",
+		"@vitest/coverage-v8": "^4.1.9",
+		"@vitest/ui": "^4.1.9",
 		"eslint": "^10.6.0",
 		"prettier": "^3.9.0",
 		"typescript": "^6.0.3",
-		"typescript-eslint": "^8.62.0"
+		"typescript-eslint": "^8.62.0",
+		"vitest": "^4.1.9"
 	},
 	"description": "",
 	"keywords": [],
