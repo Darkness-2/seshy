@@ -11,6 +11,7 @@ export default defineConfig({
 	resolve: {
 		alias: {
 			"@seshy/core": resolve(__dirname, "packages/core/src/index.ts"),
+			"@seshy/core/crypto": resolve(__dirname, "packages/core/src/crypto.ts"),
 			"@seshy/sessions": resolve(__dirname, "packages/sessions/src/index.ts")
 		}
 	}
