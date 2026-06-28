@@ -8,7 +8,7 @@
 	"scripts": {
 		"build": "tsc --build",
 		"clean": "rm -rf packages/*/dist packages/*/tsconfig.tsbuildinfo",
-		"lint": "tsc --noEmit && eslint . && prettier --check .",
+		"lint": "tsc --noEmit && tsc -p tsconfig.root.json && eslint . && prettier --check .",
 		"lint:fix": "eslint . --fix",
 		"lint:format": "prettier --write .",
 		"test": "vitest",
